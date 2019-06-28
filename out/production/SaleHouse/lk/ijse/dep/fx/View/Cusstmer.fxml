@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CustomerForm" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #999999;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.fx.Countroller.Customer">
+   <children>
+      <Button fx:id="NewCustomer" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#CreatNewCustomer" style="-fx-background-color: #FF0000;" text="New Customer" />
+      <Button fx:id="back" layoutX="385.0" layoutY="26.0" mnemonicParsing="false" onAction="#GoToTheBack" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #40FF00;" text="Back" />
+      <Label layoutX="14.0" layoutY="64.0" text="ID" />
+      <Label layoutX="14.0" layoutY="91.0" text="Name" />
+      <Label layoutX="14.0" layoutY="123.0" text="Address" />
+      <TextField fx:id="CustermerId" layoutX="108.0" layoutY="60.0" prefHeight="25.0" prefWidth="346.0" />
+      <TextField fx:id="CustomerName" layoutX="108.0" layoutY="87.0" prefHeight="25.0" prefWidth="346.0" />
+      <TextField fx:id="CustomerAddress" layoutX="108.0" layoutY="119.0" prefHeight="25.0" prefWidth="346.0" />
+      <Button layoutX="499.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #FFFF00;" text="Search" />
+      <Button fx:id="Save" layoutX="499.0" layoutY="87.0" mnemonicParsing="false" onAction="#SaveCustomer" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #00FFFF;" text="Save" />
+      <Button fx:id="Deleted" layoutX="499.0" layoutY="119.0" mnemonicParsing="false" onAction="#DeletedCustomer" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #FF00FF;" text="Deleted" />
+      <Button layoutX="499.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #FF8000;" text="Update" />
+      <Label layoutX="205.0" layoutY="26.0" prefHeight="25.0" prefWidth="122.0" text="Customer Managment" textFill="#0d0de8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="CustomerTable" layoutX="9.0" layoutY="156.0" prefHeight="220.0" prefWidth="582.0">
+        <columns>
+          <TableColumn prefWidth="118.0" text="ID" />
+          <TableColumn prefWidth="162.0" text="Name" />
+            <TableColumn prefWidth="300.0" text="Address" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

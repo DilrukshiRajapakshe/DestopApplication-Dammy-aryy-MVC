@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PlaseOderSearch" prefHeight="584.0" prefWidth="600.0" style="-fx-background-color: #999999;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.fx.Countroller.PlaseOrderSearchController">
+   <children>
+      <TextField fx:id="SearchText" layoutX="7.0" layoutY="60.0" prefHeight="25.0" prefWidth="362.0" />
+      <Button fx:id="search" layoutX="400.0" layoutY="60.0" mnemonicParsing="false" onAction="#SearchOrder" prefHeight="25.0" prefWidth="192.0" style="-fx-background-color: #FFFF00;" text="Search (Enter Order ID)" />
+      <TableView fx:id="OderTableView" layoutX="7.0" layoutY="98.0" prefHeight="481.0" prefWidth="585.0">
+        <columns>
+          <TableColumn prefWidth="139.0" text="Order ID" />
+          <TableColumn prefWidth="142.0" text="Order Date" />
+            <TableColumn prefWidth="153.0" text="Customer ID" />
+            <TableColumn prefWidth="150.0" text="Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="229.0" layoutY="23.0" prefHeight="27.0" prefWidth="161.0" text="Search Plase order" textFill="#4f0bee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
